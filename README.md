@@ -1,7 +1,5 @@
 # Automação de Gerenciamento de Clientes Super W Baixa Mogiana
 
-![Super W Baixa Mogiana](./logo/Logotipo.png){ width=200px }
-
 Este projeto foi desenvolvido para gerenciar clientes baseados em dados recebidos de uma planilha contendo logins, potência de sinal e portas associadas na OLT do provedor Super W Baixa Mogiana. A automação tem como objetivo principal duas funcionalidades:
 
 1. **Identificação de Problemas de Potência de Sinal:**
@@ -24,7 +22,7 @@ Os principais componentes do projeto são:
    Módulo principal que contém a lógica da automação para gerar uma nova planilha adicionando nome e endereço do cliente correspondente ao login pesquisado.
   
 - **manipulador_excel.py:** 
-   Utilizado para leitura e processamento da planilha `clientes_porta.xlsx`. Commit vasio por posssuir informações sensiveis. Para uso basta colar as informações a serem pesquisadas na colunas corrrespondentes ou readaptar o arquivo ou o código.
+   Utilizado para leitura e processamento da planilha `clientes_porta.xlsx`. Commit vasio por posssuir informações sensiveis. Para uso basta colar as informações a serem pesquisadas nas colunas corrrespondentes ou readaptar o arquivo ou o código.
   
 - **main.py:** 
    Ponto de entrada do programa que carrega as configurações e inicia a automação.
@@ -46,7 +44,7 @@ Para utilizar este projeto, siga as etapas abaixo:
      ```
 
 3. **Configuração das Credenciais:**
-   - Edite o arquivo `config.json` e insira as credenciais necessárias para acesso ao sistema web.
+   - Crie um arquivo `config.json` e insira as credenciais necessárias para acesso ao sistema web.
 
 4. **Execução:**
    - Execute o arquivo `main.py` para iniciar a automação:
@@ -61,7 +59,7 @@ Este projeto foi desenvolvido para permitir ao usuário analisar a planilha dos 
 
 Após a execução da automação, uma nova planilha foi gerada incluindo o nome e endereço dos clientes. Isso possibilita uma análise mais detalhada para verificar quais clientes estavam com sinal dentro dos padrões aceitáveis. Nos casos identificados um desvio, o usuário agendou uma visita técnica de forma preventiva, melhorando assim a experiência do cliente.
 
-Além disso, o projeto pode ser facilmente adaptado por usuários do sistema web que possuam uma planilha com características semelhantes ou quaisquer usuários que necessitam de automação com planilhas em excel. Isso permite que outros usuários aproveitem a estrutura existente para agilizar o trabalho de análise e gestão em seus próprios contextos.
+Além disso, o projeto pode ser facilmente adaptado por usuários de sistema web que possuam uma planilha com características semelhantes ou quaisquer usuários que necessitam de automação com planilhas em excel. Isso permite que outros usuários aproveitem a estrutura existente para agilizar o trabalho de análise e gestão em seus próprios contextos.
 
 
 **Nota:** 
